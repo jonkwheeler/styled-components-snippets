@@ -1,0 +1,104 @@
+'.source.js':
+
+  "import styled from 'styled-components'":
+    'prefix': 'imsc'
+    'body': "import styled from 'styled-components';"
+
+  "import styled from 'styled-components/native'":
+    'prefix': 'imscn'
+    'body': "import styled from 'styled-components/native';"
+
+  "import { injectGlobal } from 'styled-components'":
+    'prefix': 'imscg'
+    'body': "import { injectGlobal } from 'styled-components';"
+
+  "import { withTheme } from 'styled-components'":
+    'prefix': 'imsct'
+    'body': "import { withTheme } from 'styled-components';"
+
+  'Styled-Component':
+    'prefix': 'sc'
+    'body': """
+              const ${1} = styled.${2}`
+                ${3}
+              `;
+            """
+
+  'Export styled-component':
+    'prefix': 'exsc'
+    'body': """
+              export const ${1} = styled.${2}`
+                ${3}
+              `;
+            """
+
+  'Styled-Component from existing component':
+    'prefix': 'scc'
+    'body': """
+              const Styled${1} = styled(${1})`
+                ${2}
+              `;
+            """
+
+  'Export styled-component from existing component':
+    'prefix': 'exscc'
+    'body': """
+              export const Styled${1} = styled(${1})`
+                ${2}
+              `;
+            """
+
+  'Styled-Components file':
+    'prefix': 'scf'
+    'body': """
+              import styled from 'styled-components';
+
+              export const ${1} = styled.${2}`
+                ${3}
+              `;
+            """
+
+  'innerRef':
+    'prefix': 'inr'
+    'body': "innerRef={x => this.${1} = x}"
+
+  'styled-component extends':
+    'prefix': 'scext'
+    'body': """
+              const Extended${1} = ${1}.extends`
+                ${2}
+              `;
+            """
+
+  'Export styled-component extends':
+    'prefix': 'exscext'
+    'body': """
+              export const Extended${1} = ${1}.extends`
+                ${2}
+              `;
+            """
+
+  'ThemeProvider':
+    'prefix': 'ThemeProvider'
+    'body': """
+              <ThemeProvider theme={${1}}>
+                ${2}
+              </ThemeProvider>
+            """
+
+  'styled-component theme':
+    'prefix': 'sct'
+    'body': """
+              // Define what props.theme will look like
+              const theme = {
+                ${1}: '${2}'
+              };
+            """
+
+  'injectGlobal':
+    'prefix': 'injectGlobal'
+    'body': """
+              injectGlobal`
+                ${1}
+              `;
+            """
