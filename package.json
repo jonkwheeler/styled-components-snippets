@@ -1,22 +1,24 @@
 {
-  "name": "styled-components-snippets",
-  "main": "./lib/styled-components-snippets",
-  "version": "0.1.0",
-  "description": "Snippets for styled-components https://www.styled-components.com/",
-  "keywords": [
-    "styled-components",
-    "styled",
-    "react",
-    "css",
-    "template literal"
-  ],
-  "activationCommands": {
-    "atom-workspace": "styled-components-snippets:toggle"
-  },
-  "repository": "https://github.com/jonkwheeler/styled-components-snippets",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {}
+	"name": "styled-components-snippets",
+	"main": "./lib/styled-components-snippets",
+	"version": "0.1.0",
+	"description":
+		"Snippets for styled-components https://www.styled-components.com/",
+	"keywords": [
+		"styled-components",
+		"styled",
+		"react",
+		"css",
+		"template literal",
+		"snippets"
+	],
+	"activationCommands": {
+		"atom-workspace": "styled-components-snippets:toggle"
+	},
+	"repository": "https://github.com/jonkwheeler/styled-components-snippets",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"dependencies": {}
 }
