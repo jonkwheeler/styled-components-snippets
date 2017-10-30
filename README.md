@@ -1,38 +1,40 @@
 # Styled-Components Snippets for Atom
 
-View [Styled-Components documentation](https://www.styled-components.com/docs) here.
+View the [Styled-Components documentation](https://www.styled-components.com/docs) here.
 
-I'll slowly add to this. Submit PR's if you like.
+I'll add to this over time. Submit PR's if you like.
 
-### Snippets so far
+## Snippets so far
 
-Prefix | Description
+### Imports
 
-## Imports
-Prefix | Output
-`imsc` | import styled from 'styled-components'
-`imscn` | import styled from 'styled-components/native'
-`imscg` | import { injectGlobal } from 'styled-components'
-`imsct` | import { withTheme } from 'styled-components'
+| Prefix | Output |
+| --- | --- |
+| `imsc` | `import styled from 'styled-components';` |
+| `imscn` | `import styled from 'styled-components/native';` |
+| `imscg` | `import { injectGlobal } from 'styled-components';` |
+| `imsct` | `import { withTheme } from 'styled-components';` |
 
-## Creation
-Prefix | Example Output / Description
-`sc` | const ${1} = styled.${2} / Styled-Component
-`exsc` | export const ${1} = styled.${2} / Export styled-component
-`scc` | const Styled${1} = styled(${1}) / Styled-Component from existing component
-`exscc` | export const Styled${1} = styled(${1}) / Export styled-component from existing component
-`scext` | const Extended${1} = ${1}.extends / Styled-Component extends
-`exscext` | export const Extended${1} = ${1}.extends / Export styled-component extends
-`scf` | Add both 'imsc' and 'sc' to a new styles.js file
+### Creation
+| Prefix | Example Output / Description |
+| --- | --- |
+| `sc` | `const ${1} = styled.${2}` / Styled-Component |
+| `exsc` | `export const ${1} = styled.${2}` / Export styled-component |
+| `scc` | `const Styled${1} = styled(${1})` / Styled-Component from existing component |
+| `exscc` | `export const Styled${1} = styled(${1})` / Export styled-component from existing component |
+| `scext` | `const Extended${1} = ${1}.extends` / Styled-Component extends |
+| `exscext` | `export const Extended${1} = ${1}.extends` / Export styled-component extends |
+| `scf` | Add both 'imsc' and 'sc' to a new styles.js file |
 
-## Misc
-Prefix | Output
-`innerRef` | innerRef={x => this.${1} = x}
-`injectGlobal` | injectGlobal / Create injectGlobal var
-`ThemeProvider` | <ThemeProvider theme={${1}}> ${2} </ThemeProvider>
-`sct` | const theme = { ${1}: '${2}' } / Create styled-component theme object
+### Misc
+| Prefix | Example Output / Description |
+| --- | --- |
+| `innerRef` | `innerRef={x => this.${1} = x}` |
+| `injectGlobal` | `injectGlobal` / Create injectGlobal var |
+| `ThemeProvider` | `<ThemeProvider theme={${1}}> ${2} </ThemeProvider>` |
+| `sct` | `const theme = { ${1}: '${2}' }` / Create styled-component theme object |
 
-# The MIT License
+###### The MIT License
 
 Copyright (c) 2017 @jonkwheeler
 
