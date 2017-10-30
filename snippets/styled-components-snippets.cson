@@ -58,8 +58,12 @@
               `;
             """
 
-  'innerRef':
+  'innerRef (shorthand)':
     'prefix': 'inr'
+    'body': "innerRef={x => this.${1} = x}"
+
+  'innerRef':
+    'prefix': 'innerRef'
     'body': "innerRef={x => this.${1} = x}"
 
   'styled-component extends':

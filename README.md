@@ -29,7 +29,8 @@ I'll add to this over time. Submit PR's if you like.
 ### Misc
 | Prefix | Example Output / Description |
 | --- | --- |
-| `innerRef` | `innerRef={x => this.${1} = x}` |
+| `inr` | `innerRef={x => this.${1} = x}` / shorthand |
+| `innerRef` | `innerRef={x => this.${1} = x}` / longhand |
 | `injectGlobal` | `injectGlobal` / Create injectGlobal var |
 | `ThemeProvider` | `<ThemeProvider theme={${1}}> ${2} </ThemeProvider>` |
 | `sct` | `const theme = { ${1}: '${2}' }` / Create styled-component theme object |
