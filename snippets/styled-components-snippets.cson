@@ -106,3 +106,23 @@
                 ${1}
               `;
             """
+  
+  'Styled-Component with attributes':
+    'prefix': 'scattrs'
+    'body': """
+              const ${1} = styled.${2}.attrs({
+                ${3}: ${4}
+              })`
+                ${5}
+              `;
+            """
+
+  'Export styled-component with attributes':
+    'prefix': 'exscattrs'
+    'body': """
+              export const ${1} = styled.${2}.attrs({
+                ${3}: ${4}
+              })`
+                ${5}
+              `;
+            """
