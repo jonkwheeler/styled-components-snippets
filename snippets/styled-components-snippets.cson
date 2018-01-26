@@ -53,9 +53,11 @@
     'body': """
               import styled from 'styled-components';
 
-              export const ${1} = styled.${2}`
+              const ${1} = styled.${2}`
                 ${3}
               `;
+
+              export default ${1};
             """
 
   'innerRef (shorthand)':
