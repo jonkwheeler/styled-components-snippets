@@ -128,3 +128,9 @@
                 ${5}
               `;
             """
+    
+   'Use theme inside styled-component':
+    'prefix': 'scut'
+    'body': """
+              ${({ theme }) => theme.${1})};
+            """
