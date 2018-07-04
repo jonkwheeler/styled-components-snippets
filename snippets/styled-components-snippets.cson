@@ -128,8 +128,14 @@
                 ${5}
               `;
             """
+    
+   'Use theme inside styled-component':
+    'prefix': 'sct'
+    'body': """
+              ${({ theme }) => theme.${1}};
+            """
 
-  'Props':
+  'Use props inside styled-component':
     'prefix': 'scp'
     'body': """
               ${props => props.${1}};
