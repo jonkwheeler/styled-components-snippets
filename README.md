@@ -31,7 +31,9 @@ I'll add to this over time. Submit PR's if you like. Tag me on them.
 
 ### Props
 
-| `scp` | `${props => props.${1}};` / Use props inside styled-component |
+| Prefix | Example Output / Description                                              |
+| ------ | ------------------------------------------------------------------------- |
+| `scp`  | `${props => props.${1}};` / Use props inside styled-component             |
 | `scpt` | `${({ theme }) => theme.${1}};` / Use props.theme inside styled-component |
 
 ### Misc
