@@ -1,4 +1,4 @@
-'.source.js':
+'.source.js, .source.jsx, .source.ts, .source.tsx':
 
   "import styled from 'styled-components'":
     'prefix': 'imsc'
@@ -108,7 +108,7 @@
                 ${1}
               `;
             """
-  
+
   'Styled-Component with attributes':
     'prefix': 'scattrs'
     'body': """
@@ -127,4 +127,10 @@
               })`
                 ${5}
               `;
+            """
+
+  'Props':
+    'prefix': 'scp'
+    'body': """
+              ${props => props.${1}};
             """
