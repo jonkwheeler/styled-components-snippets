@@ -129,8 +129,8 @@
               `;
             """
     
-   'Use theme inside styled-component':
-    'prefix': 'sct'
+   'Use props.theme inside styled-component':
+    'prefix': 'scpt'
     'body': """
               ${({ theme }) => theme.${1}};
             """
