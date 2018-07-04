@@ -1,4 +1,4 @@
-'.source.js':
+'.source.js, .source.jsx, .source.ts, .source.tsx':
 
   "import styled from 'styled-components'":
     'prefix': 'imsc'
@@ -108,7 +108,7 @@
                 ${1}
               `;
             """
-  
+
   'Styled-Component with attributes':
     'prefix': 'scattrs'
     'body': """
@@ -130,13 +130,13 @@
             """
     
    'Use theme inside styled-component':
-    'prefix': 'scut'
+    'prefix': 'sct'
     'body': """
               ${({ theme }) => theme.${1}};
             """
 
-   'Use props inside styled-component':
-    'prefix': 'scup'
+  'Use props inside styled-component':
+    'prefix': 'scp'
     'body': """
-              ${({ ${1} }) => ${1}};
+              ${props => props.${1}};
             """
