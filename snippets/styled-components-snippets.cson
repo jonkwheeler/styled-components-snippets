@@ -84,14 +84,6 @@
   'createGlobalStyle':
     'prefix': 'scg'
     'body': """
-              createGlobalStyle`
-                ${1}
-              `;
-            """
-
-  'createGlobalStyle':
-    'prefix': 'scg'
-    'body': """
               const Global${1} = createGlobalStyle`
                 ${2}
               `;
