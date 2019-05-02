@@ -8,9 +8,9 @@
     'prefix': 'imscn'
     'body': "import styled from 'styled-components/native';"
 
-  "import { injectGlobal } from 'styled-components'":
+  "import { createGlobalStyle } from 'styled-components'":
     'prefix': 'imscg'
-    'body': "import { injectGlobal } from 'styled-components';"
+    'body': "import { createGlobalStyle } from 'styled-components';"
 
   "import { withTheme } from 'styled-components'":
     'prefix': 'imsct'
@@ -68,22 +68,6 @@
     'prefix': 'innerRef'
     'body': "innerRef={x => this.${1} = x}"
 
-  'styled-component extends':
-    'prefix': 'scext'
-    'body': """
-              const Extended${1} = ${1}.extends`
-                ${2}
-              `;
-            """
-
-  'Export styled-component extends':
-    'prefix': 'exscext'
-    'body': """
-              export const Extended${1} = ${1}.extends`
-                ${2}
-              `;
-            """
-
   'ThemeProvider':
     'prefix': 'ThemeProvider'
     'body': """
@@ -101,11 +85,27 @@
               };
             """
 
-  'injectGlobal':
-    'prefix': 'injectGlobal'
+  'createGlobalStyle':
+    'prefix': 'scg'
     'body': """
-              injectGlobal`
+              createGlobalStyle`
                 ${1}
+              `;
+            """
+
+  'createGlobalStyle':
+    'prefix': 'scg'
+    'body': """
+              const ${1} = createGlobalStyle`
+                ${2}
+              `;
+            """
+
+  'Export createGlobalStyle':
+    'prefix': 'exscg'
+    'body': """
+              export const ${1} = createGlobalStyle`
+                ${2}
               `;
             """
 
