@@ -12,6 +12,10 @@
     'prefix': 'imscg'
     'body': "import { createGlobalStyle } from 'styled-components';"
 
+  "import { css } from 'styled-components'":
+    'prefix': 'imsccss'
+    'body': "import { css } from 'styled-components';"
+
   "import { withTheme } from 'styled-components'":
     'prefix': 'imsct'
     'body': "import { withTheme } from 'styled-components';"
@@ -19,7 +23,7 @@
   'Styled-Component':
     'prefix': 'sc'
     'body': """
-              const ${1} = styled.${2}`
+              const Styled${1} = styled.${2}`
                 ${3}
               `;
             """
@@ -27,7 +31,7 @@
   'Export styled-component':
     'prefix': 'exsc'
     'body': """
-              export const ${1} = styled.${2}`
+              export const Styled${1} = styled.${2}`
                 ${3}
               `;
             """
@@ -53,7 +57,7 @@
     'body': """
               import styled from 'styled-components';
 
-              const ${1} = styled.${2}`
+              const Styled${1} = styled.${2}`
                 ${3}
               `;
 
@@ -96,7 +100,7 @@
   'createGlobalStyle':
     'prefix': 'scg'
     'body': """
-              const ${1} = createGlobalStyle`
+              const Global${1} = createGlobalStyle`
                 ${2}
               `;
             """
@@ -104,7 +108,7 @@
   'Export createGlobalStyle':
     'prefix': 'exscg'
     'body': """
-              export const ${1} = createGlobalStyle`
+              export const Global${1} = createGlobalStyle`
                 ${2}
               `;
             """
@@ -112,7 +116,7 @@
   'Styled-Component with attributes':
     'prefix': 'scattrs'
     'body': """
-              const ${1} = styled.${2}.attrs({
+              const Styled${1} = styled.${2}.attrs({
                 ${3}: ${4}
               })`
                 ${5}
@@ -122,7 +126,7 @@
   'Export styled-component with attributes':
     'prefix': 'exscattrs'
     'body': """
-              export const ${1} = styled.${2}.attrs({
+              export const Styled${1} = styled.${2}.attrs({
                 ${3}: ${4}
               })`
                 ${5}
