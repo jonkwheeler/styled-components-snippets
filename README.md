@@ -22,15 +22,15 @@ I'll add to this over time. Submit PR's if you like. Tag me on them.
 
 | Prefix      | Example Output / Description                                                                                |
 | ----------- | ----------------------------------------------------------------------------------------------------------- |
-| `sc`        | `const Styled${1} = styled.${2}` / Styled-Component                                                         |
-| `exsc`      | `export const Styled${1} = styled.${2}` / Export styled-component                                           |
-| `scc`       | `const Styled${1} = styled(${1})` / Styled-Component from existing component                                |
-| `exscc`     | `export const Styled${1} = styled(${1})` / Export styled-component from existing component                  |
+| `sc`        | `const ${1} = styled.${2}` / Styled-Component                                                         |
+| `exsc`      | `export const ${1} = styled.${2}` / Export styled-component                                           |
+| `scc`       | `const ${1} = styled(${1})` / Styled-Component from existing component                                |
+| `exscc`     | `export const ${1} = styled(${1})` / Export styled-component from existing component                  |
 | `scg`       | `const Global${1} = createGlobalStyle` / Styled-Component                                                   |
 | `exscg`     | `export const Global${1} = createGlobalStyle` / Export styled-component                                     |
 | `scf`       | Add both 'imsc' and 'sc' to a new styles.js file                                                            |
-| `scattrs`   | `const Styled${1} = styled.${2}.attrs({ ${3}: ${4} })${5}` / Styled-Component with attributes               |
-| `exscattrs` | `export const Styled${1} = styled.${2}.attrs({ ${3}: ${4} })${5}` / Export styled-component with attributes |
+| `scattrs`   | `const ${1} = styled.${2}.attrs({ ${3}: ${4} })${5}` / Styled-Component with attributes               |
+| `exscattrs` | `export const ${1} = styled.${2}.attrs({ ${3}: ${4} })${5}` / Export styled-component with attributes |
 
 ### Props
 

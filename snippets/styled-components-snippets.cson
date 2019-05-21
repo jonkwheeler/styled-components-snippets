@@ -23,7 +23,7 @@
   'Styled-Component':
     'prefix': 'sc'
     'body': """
-              const Styled${1} = styled.${2}`
+              const ${1} = styled.${2}`
                 ${3}
               `;
             """
@@ -31,7 +31,7 @@
   'Export styled-component':
     'prefix': 'exsc'
     'body': """
-              export const Styled${1} = styled.${2}`
+              export const ${1} = styled.${2}`
                 ${3}
               `;
             """
@@ -39,7 +39,7 @@
   'Styled-Component from existing component':
     'prefix': 'scc'
     'body': """
-              const Styled${1} = styled(${1})`
+              const ${1} = styled(${1})`
                 ${2}
               `;
             """
@@ -47,7 +47,7 @@
   'Export styled-component from existing component':
     'prefix': 'exscc'
     'body': """
-              export const Styled${1} = styled(${1})`
+              export const ${1} = styled(${1})`
                 ${2}
               `;
             """
@@ -57,7 +57,7 @@
     'body': """
               import styled from 'styled-components';
 
-              const Styled${1} = styled.${2}`
+              const ${1} = styled.${2}`
                 ${3}
               `;
 
@@ -100,7 +100,7 @@
   'Styled-Component with attributes':
     'prefix': 'scattrs'
     'body': """
-              const Styled${1} = styled.${2}.attrs({
+              const ${1} = styled.${2}.attrs({
                 ${3}: ${4}
               })`
                 ${5}
@@ -110,7 +110,7 @@
   'Export styled-component with attributes':
     'prefix': 'exscattrs'
     'body': """
-              export const Styled${1} = styled.${2}.attrs({
+              export const ${1} = styled.${2}.attrs({
                 ${3}: ${4}
               })`
                 ${5}
