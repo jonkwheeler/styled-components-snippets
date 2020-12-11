@@ -128,3 +128,9 @@
     'body': """
               ${props => props.${1}};
             """
+
+  'Use props inside styled-component (destructured)':
+    'prefix': 'scpd'
+    'body': """
+              ${({ ${1} }) => ${2}};
+            """
